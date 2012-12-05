@@ -1,0 +1,9 @@
+(compile -s -O3 -d1 hintz-utils.scm -j hintz-utils)
+(compile -s hintz-utils.import.scm -O3 -d1)
+(compile -c -O3 -d1 hintz-utils.scm -unit hintz-utils -j hintz-utils)
+
+(install-extension
+ 'hintz-utils
+ '("hintz-utils.o" "hintz-utils.so" "hintz-utils.import.so")
+ '((version 1)
+   (static "hintz-utils.o"))) ;; for static linking

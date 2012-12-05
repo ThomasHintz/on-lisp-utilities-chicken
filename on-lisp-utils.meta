@@ -1,0 +1,7 @@
+;;; utils.meta -*- scheme -*-
+
+((egg "utils.egg")
+ (synopsis "my tuils")
+ (license "BSD")
+ ;(depends)
+ )
